@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Políticas de Privacidad – Step Life</title>
+  <style>
+    :root{
+      --bg: #0b0c10;
+      --card: #12141a;
+      --text: #e8eaf0;
+      --muted: #aab0bf;
+      --accent: #4da3ff;
+      --ok: #28a745;
+      --warn: #f5a623;
+    }
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg: #f7f8fa;
+        --card: #ffffff;
+        --text: #1a1f2b;
+        --muted: #5a6475;
+        --accent: #0969da;
+      }
+    }
+    * { box-sizing: border-box; }
+    body{
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+    }
+    header{
+      padding: 2.5rem 1rem 1rem;
+      text-align: center;
+      background: linear-gradient(135deg, rgba(77,163,255,.15), rgba(9,105,218,.08));
+      border-bottom: 1px solid rgba(255,255,255,.06);
+    }
+    h1{
+      margin: 0 0 .25rem;
+      font-weight: 800;
+      letter-spacing: .2px;
+    }
+    .subtitle{
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+    main{
+      max-width: 900px;
+      margin: 1.25rem auto 3rem;
+      padding: 0 1rem 2rem;
+    }
+    .card{
+      background: var(--card);
+      border: 1px solid rgba(255,255,255,.08);
+      border-radius: 14px;
+      padding: 1.25rem;
+      margin: 1rem 0;
+      box-shadow: 0 6px 30px rgba(0,0,0,.12);
+    }
+    nav.toc{
+      padding: .75rem 1rem;
+      font-size: .95rem;
+    }
+    nav.toc a{
+      color: var(--accent);
+      text-decoration: none;
+    }
+    nav.toc ul{ margin: .25rem 0 .25rem 1rem; }
+    section h2{
+      margin-top: .25rem;
+      font-size: 1.25rem;
+    }
+    h3{ margin: 1rem 0 .25rem; }
+    p{ margin: .35rem 0 .75rem; }
+    ul, ol{ margin: .35rem 0 .85rem .95rem; }
+    code, .badge{
+      background: rgba(255,255,255,.06);
+      border: 1px solid rgba(255,255,255,.08);
+      border-radius: 8px;
+      padding: .15rem .4rem;
+      font-size: .9rem;
+    }
+    .meta{
+      display: flex;
+      gap: .75rem;
+      flex-wrap: wrap;
+      align-items: center;
+      color: var(--muted);
+      font-size: .9rem;
+    }
+    .kv{ display: inline-flex; gap: .35rem; align-items: center; }
+    .kv b{ color: var(--text); }
+    .divider{
+      height: 1px;
+      background: rgba(255,255,255,.08);
+      margin: .75rem 0 1rem;
+    }
+    .foot{
+      margin-top: 1.25rem;
+      font-size: .9rem;
+      color: var(--muted);
+    }
+    .notice{
+      padding: .75rem .9rem;
+      border-left: 4px solid var(--accent);
+      background: rgba(77,163,255,.08);
+      border-radius: 10px;
+    }
+    .grid{
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+    @media (min-width: 780px){
+      .grid{ grid-template-columns: 1fr 1fr; }
+    }
+    .tag{ display: inline-block; margin-right: .5rem; }
+    a { color: var(--accent); }
+    .small{ font-size: .92rem; color: var(--muted); }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Políticas de Privacidad – Step Life</h1>
+    <p class="subtitle">Cómo protegemos y usamos tu información en la app para corredores</p>
+  </header>
+  <main>
+    <div class="card meta">
+      <span class="kv"><b>Última actualización:</b> 21 de octubre de 2025</span>
+      <span class="kv"><b>Versión:</b> 1.0.0</span>
+      <span class="kv"><b>Contacto:</b> <a href="mailto:vsolares008@gmail.com">vsolares008@gmail.com</a></span>
+    </div>
+
+    <nav class="card toc" aria-label="Índice">
+      <b>Contenido</b>
+      <ul>
+        <li><a href="#introduccion">1. Introducción</a></li>
+        <li><a href="#responsable">2. Responsable</a></li>
+        <li><a href="#datos">3. Datos que recopilamos</a></li>
+        <li><a href="#finalidades">4. Finalidades y bases legales</a></li>
+        <li><a href="#seguridad">5. Conservación y seguridad</a></li>
+        <li><a href="#derechos">6. Derechos ARCO y cómo ejercerlos</a></li>
+        <li><a href="#terceros">7. Uso de servicios de terceros</a></li>
+        <li><a href="#transferencias">8. Transferencias</a></li>
+        <li><a href="#menores">9. Menores de edad</a></li>
+        <li><a href="#cambios">10. Cambios a este aviso</a></li>
+        <li><a href="#simplificado">Aviso de Privacidad Simplificado</a></li>
+      </ul>
+    </nav>
+
+    <section id="introduccion" class="card">
+      <h2>1. Introducción</h2>
+      <p>En Step Life nos tomamos en serio tu privacidad. Este documento explica, con lenguaje claro, qué datos recopilamos, con qué fines, cómo los resguardamos y qué derechos puedes ejercer. Al utilizar la aplicación aceptas estas Políticas de Privacidad.</p>
+      <div class="notice small">Consejo: puedes navegar por secciones usando el índice de contenidos.</div>
+    </section>
+
+    <section id="responsable" class="card">
+      <h2>2. Responsable</h2>
+      <p><b>App:</b> Step Life</p>
+      <p><b>Desarrollo:</b> Equipo académico de la Universidad Tecnológica de Puebla (UTP).</p>
+      <p><b>Contacto de privacidad:</b> <a href="mailto:privacidad@steplife.app">privacidad@steplife.app</a></p>
+    </section>
+
+    <section id="datos" class="card">
+      <h2>3. Datos que recopilamos</h2>
+      <div class="grid">
+        <div>
+          <h3>3.1 Datos que proporcionas</h3>
+          <ul>
+            <li>Nombre o alias.</li>
+            <li>Correo electrónico (registro y autenticación).</li>
+            <li>Imagen de perfil (opcional).</li>
+          </ul>
+        </div>
+        <div>
+          <h3>3.2 Datos que se generan por el uso</h3>
+          <ul>
+            <li>Ubicación (GPS) durante entrenamientos para mapear el recorrido.</li>
+            <li>Métricas de actividad: distancia, tiempo, ritmo promedio y calorías estimadas.</li>
+            <li>Historial de entrenamientos y rutas.</li>
+            <li>Datos técnicos: sistema operativo, idioma, versión de la app e identificadores del dispositivo.</li>
+          </ul>
+        </div>
+      </div>
+      <h3>3.3 Datos procedentes de terceros</h3>
+      <p>Si vinculas servicios externos (p. ej., Google Maps o plataformas de pago), estos podrán tratar datos bajo sus propias políticas, que deberás revisar directamente en sus sitios oficiales.</p>
+    </section>
+
+    <section id="finalidades" class="card">
+      <h2>4. Finalidades y bases legales</h2>
+      <h3>4.1 Finalidades</h3>
+      <ul>
+        <li>Registrar y mostrar tu progreso (distancia, ritmo, tiempo y calorías).</li>
+        <li>Visualizar tus recorridos en mapa con <span class="badge">Google Maps</span>.</li>
+        <li>Generar estadísticas y gráficas semanales de desempeño.</li>
+        <li>Administrar tu cuenta y autenticación con <span class="badge">Firebase</span>.</li>
+        <li>Enviarte notificaciones motivacionales y recordatorios (puedes desactivarlas).</li>
+        <li>Mejorar la estabilidad, rendimiento y seguridad de la aplicación.</li>
+      </ul>
+      <div class="divider"></div>
+      <h3>4.2 Bases legales</h3>
+      <p>Tratamos los datos conforme a los principios de la <b>LFPDPPP (México)</b>: consentimiento informado, finalidad, proporcionalidad, calidad, lealtad, responsabilidad y seguridad.</p>
+    </section>
+
+    <section id="seguridad" class="card">
+      <h2>5. Conservación y seguridad</h2>
+      <ul>
+        <li>Guardamos la información en <b>Firebase</b> con cifrado y controles de acceso.</li>
+        <li>Mantenemos los datos mientras tu cuenta esté activa y durante los plazos necesarios para cumplir finalidades legales o técnicas.</li>
+        <li>Al eliminar tu cuenta, eliminamos los datos personales y registros asociados de nuestros sistemas de producción.</li>
+      </ul>
+      <p class="small">Aunque aplicamos medidas robustas, ningún sistema conectado a internet es 100% invulnerable. Te recomendamos mantener tus dispositivos actualizados.</p>
+    </section>
+
+    <section id="derechos" class="card">
+      <h2>6. Derechos ARCO y cómo ejercerlos</h2>
+      <p>Puedes ejercer tus derechos de <b>Acceso, Rectificación, Cancelación y Oposición</b> (ARCO) en cualquier momento.</p>
+      <ol>
+        <li>Escríbenos a <a href="mailto:privacidad@steplife.app">privacidad@steplife.app</a> indicando el derecho que deseas ejercer.</li>
+        <li>Incluye información suficiente para identificar tu cuenta (correo de registro) y, de ser necesario, documentación que acredite tu identidad.</li>
+        <li>Atenderemos tu solicitud dentro de los plazos establecidos por la normativa aplicable y te notificaremos la resolución por correo electrónico.</li>
+      </ol>
+      <p class="small">También puedes solicitar la <b>revocación del consentimiento</b> o la <b>limitación de uso y divulgación</b> (por ejemplo, desactivando notificaciones).</p>
+    </section>
+
+    <section id="terceros" class="card">
+      <h2>7. Uso de servicios de terceros</h2>
+      <ul>
+        <li><b>Firebase Authentication</b>: registro e inicio de sesión.</li>
+        <li><b>Firebase Firestore</b>: almacenamiento de entrenamientos e historial.</li>
+        <li><b>Firebase Cloud Messaging</b>: envío de notificaciones.</li>
+        <li><b>Google Maps API</b>: visualización de rutas y mapas en tiempo real.</li>
+      </ul>
+      <p class="small">Cada servicio cuenta con su propio aviso de privacidad y condiciones. Revísalos en sus páginas oficiales.</p>
+    </section>
+
+    <section id="transferencias" class="card">
+      <h2>8. Transferencia de Datos</h2>
+      <p>No vendemos ni alquilamos tus datos personales. La <b>transferencia de datos</b> se realizará únicamente en los siguientes casos:</p>
+      <ul>
+        <li>Sea indispensable para la operación segura de la app y los servicios enlistados.</li>
+        <li>Exista obligación legal o requerimiento de autoridad competente.</li>
+        <li>Sea necesario para proteger derechos, propiedad o seguridad del usuario o de Step Life.</li>
+      </ul>
+    </section>
+
+    <section id="menores" class="card">
+      <h2>9. Menores de edad</h2>
+      <p>La app está dirigida a personas de <b>16 años o más</b>. Si detectamos datos de menores sin el consentimiento de su tutor, procederemos a su eliminación al ser notificados.</p>
+    </section>
+
+    <section id="cambios" class="card">
+      <h2>10. Cambios a este aviso</h2>
+      <p>Podremos actualizar estas Políticas de Privacidad para reflejar mejoras o cambios legales. Publicaremos la versión vigente en la app e indicaremos la fecha de actualización.</p>
+    </section>
+
+    <section id="simplificado" class="card">
+      <h2>Aviso de Privacidad Simplificado</h2>
+      <p><b>Responsable:</b> Step Life – Universidad Tecnológica de Puebla (UTP).<br/>
+         <b>Contacto:</b> <a href="mailto:privacidad@steplife.app">privacidad@steplife.app</a></p>
+      <p><b>Datos:</b> nombre/correo/imagen (opcional), GPS y métricas de actividad, datos técnicos del dispositivo.</p>
+      <p><b>Finalidades:</b> registrar y analizar entrenamientos, mostrar mapas, generar estadísticas y enviar notificaciones.</p>
+      <p><b>Base legal:</b> consentimiento e intereses legítimos conforme a LFPDPPP.</p>
+      <p><b>Derechos ARCO:</b> pide acceso, rectificación, cancelación u oposición por correo.</p>
+      <p><b>Conservación:</b> mientras tu cuenta esté activa; borrado al eliminarla.</p>
+      <p><b>Terceros:</b> Firebase (auth, BD, notificaciones) y Google Maps.</p>
+      <p><b>Cambios:</b> publicaremos la versión vigente en la app.</p>
+      <p><b>Aceptación:</b> al usar Step Life aceptas este aviso.</p>
+    </section>
+
+    <p class="foot">© 2025 Step Life · Documento de privacidad. Este archivo puede integrarse en una pantalla de la app o mostrarse en un <code>WebView</code>.</p>
+  </main>
+</body>
+</html>
